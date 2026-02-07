@@ -1,0 +1,45 @@
+  <!DOCTYPE html>                                                                                                
+  <html lang="en">                                                                                               
+  <head>                                                                                                         
+      <meta charset="UTF-8">                                                                                     
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">                                     
+      <title>Privacy Policy - Insplorer</title>
+      <style>
+          body { font-family: -apple-system, system-ui, sans-serif; max-width: 600px; margin: 40px auto; padding:
+   0 20px; color: #333; line-height: 1.6; }
+          h1 { font-size: 24px; }
+          h2 { font-size: 18px; margin-top: 24px; }
+          p { margin: 8px 0; }
+          .updated { color: #666; font-size: 14px; }
+      </style>
+  </head>
+  <body>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: February 2025</p>
+      <p>Insplorer respects your privacy. This policy explains how we handle your data.</p>
+
+      <h2>Data Storage</h2>
+      <p>All your data is stored locally on your device. We do not have servers that collect or store your
+  personal information. Session data is stored securely in the device's encrypted Keychain.</p>
+
+      <h2>Data Sharing</h2>
+      <p>We do not sell, trade, or share your personal data with third parties. Your data never leaves your
+  device.</p>
+
+      <h2>Data Deletion</h2>
+      <p>You can delete all your data at any time by logging out or uninstalling the app. Use "Clear Cache" in
+  Settings to remove cached analytics data.</p>
+
+      <h2>Security</h2>
+      <p>We use industry-standard security measures including iOS Keychain encryption for sensitive data.</p>
+
+      <h2>Children's Privacy</h2>
+      <p>This app is not intended for children under 13. We do not knowingly collect data from children.</p>
+
+      <h2>Changes</h2>
+      <p>We may update this policy periodically. Changes will be reflected in the "Last updated" date above.</p>
+
+      <h2>Contact</h2>
+      <p>Questions? Email us at <a href="mailto:insplorer@fastmail.com">insplorer@fastmail.com</a></p>
+  </body>
+  </html>

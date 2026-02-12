@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Insplorer</title>
+    <style>
+        body {
+            font-family: -apple-system, system-ui, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1 { font-size: 24px; }
+        h2 { font-size: 18px; margin-top: 24px; }
+        p { margin: 8px 0; }
+        .updated { color: #666; font-size: 14px; }
+        form { margin-top: 24px; }
+        label {
+            display: block;
+            margin-top: 16px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 4px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 140px;
+            resize: vertical;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #007aff;
+        }
+        button[type="submit"] {
+            margin-top: 20px;
+            padding: 10px 24px;
+            background: #007aff;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            font-family: inherit;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background: #005ecb;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <p>Have a question, feedback, or need help? We'd love to hear from you.</p>
+    <p>You can reach us directly at <a href="mailto:insplorer@fastmail.com">insplorer@fastmail.com</a> or use the form below.</p>
+
+    <form action="https://api.staticforms.dev/submit" method="POST">
+        <input type="hidden" name="apiKey" value="sf_a0fhmkaa9kl9fam85l7c24m6">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</body>
+</html>

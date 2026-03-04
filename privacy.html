@@ -6,6 +6,8 @@ body { font-family: -apple-system, system-ui, sans-serif; max-width: 600px; marg
 h1 { font-size: 24px; }
 h2 { font-size: 18px; margin-top: 24px; }
 p { margin: 8px 0; }
+ul { margin: 8px 0; padding-left: 24px; }
+li { margin: 4px 0; }
 .updated { color: #666; font-size: 14px; }
 </style>
 </head>
@@ -13,27 +15,47 @@ p { margin: 8px 0; }
 
 <h1>Privacy Policy</h1>
 
-<p class="updated">Last updated: February 2026</p>
+<p class="updated">Last updated: March 2026</p>
 
 <p>Insplorer respects your privacy. This policy explains how we handle your data.</p>
 
 <h2>Data Storage</h2>
 
-<p>All your data is stored locally on your device. We do not operate servers that collect or store your personal information. Session credentials are stored securely in the device's encrypted Keychain.</p>
+<p>Your Instagram profile data and analytics are stored locally on your device using Apple's SwiftData framework. Session credentials are stored securely in the device's encrypted Keychain. AI-generated insights and recommendations are cached locally in UserDefaults.</p>
 
-<h2>AI Features</h2>
+<h2>AI Features &amp; Data Transmission</h2>
 
-<p>Insplorer includes AI-powered features. To provide these features, anonymized and aggregated account data may be sent to third-party AI providers (such as OpenAI or other providers we may use in the future) through our secure relay server. Your IP address and device identifiers are not shared with these providers. No passwords, login credentials, or direct messages are ever transmitted.</p>
+<p>Insplorer offers optional AI-powered features including growth tips, content strategy analysis, caption generation, weekly reports, and content planning. These features require your explicit consent before any data is transmitted.</p>
+
+<p>When you enable AI features, the following data is sent to OpenAI (the AI provider) via a secure encrypted relay server:</p>
+
+<ul>
+<li>Follower and following counts</li>
+<li>Engagement rates and posting frequency</li>
+<li>Caption snippets and hashtags</li>
+<li>Audience tier breakdown (e.g. superfan/regular/casual percentages)</li>
+</ul>
+
+<p>The following data is never sent:</p>
+
+<ul>
+<li>Your Instagram password or login credentials</li>
+<li>Your follower or following lists</li>
+<li>Your IP address</li>
+<li>Individual post images or full post content</li>
+</ul>
+
+<p>Data sent to OpenAI via their API is not used to train AI models, per OpenAI's API data usage policy.</p>
+
+<p>You must grant consent before any AI data sharing occurs. You can revoke consent at any time in Settings &gt; AI &amp; Data Sharing, which immediately stops all data transmission and clears cached AI data.</p>
 
 <h2>Data Sharing</h2>
 
-<p>Other than the anonymized data used for AI features described above, we do not sell, trade, or share your personal data with third parties.</p>
+<p>We do not sell, trade, or share your personal data with third parties for marketing or advertising purposes.</p>
 
-<h2>Account & Data Deletion</h2>
+<h2>Account &amp; Data Deletion</h2>
 
-<p>You can permanently delete your account and all associated data at any time by going to Settings > Delete Account & Data. This removes all locally stored analytics, cached profiles, app preferences, and session credentials from
-your device. Alternatively, logging out clears all local data and AI caches, and uninstalling the app removes everything from your device. Use "Clear
-Cache" in Settings to remove only cached analytics data.</p>
+<p>You can permanently delete your account and all associated data at any time by going to Settings &gt; Delete Account &amp; Data. This removes all locally stored analytics, cached profiles, app preferences, and session credentials from your device. Alternatively, logging out clears all local data and AI caches, and uninstalling the app removes everything from your device. Use "Clear Cache" in Settings to remove only cached analytics data.</p>
 
 <h2>Crash &amp; Diagnostics</h2>
 
@@ -41,7 +63,7 @@ Cache" in Settings to remove only cached analytics data.</p>
 
 <h2>Security</h2>
 
-<p>We use industry-standard security measures including iOS Keychain encryption for sensitive data and HTTPS encryption for all network communication.</p>
+<p>We use industry-standard security measures including iOS Keychain encryption for credentials, authenticated API requests with bearer tokens, and HTTPS for all network communication. AI data is transmitted via HTTPS to a secure relay server before being forwarded to OpenAI.</p>
 
 <h2>Children's Privacy</h2>
 
